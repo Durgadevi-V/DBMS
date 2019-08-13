@@ -1,0 +1,8 @@
+--create table patientinfo(id int,tittle char(3),fname varchar(10),lname varchar(10),age int(3),gender varchar(5),city varchar(10),phno int(10));
+--insert into patientinfo values(1,'Mr','ram','raj',35,'M','ch',7092917089);
+--select * from patientinfo;
+--update patientinfo set gender='M' where id=1;
+--alter table patientinfo 
+--add email varchar(100);
+--update patientinfo set email='rtrdurga@gmail.com' where id=1;
+SELECT * from patientinfo;
