@@ -30,4 +30,6 @@ join consult c1 on c1.pid=p1.id
 
 select fname,gender,city from patientinfo order by id desc;
 
+select fname from patientinfo where id in(select pid from consult where fees=500);
+
 
