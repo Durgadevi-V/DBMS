@@ -1,0 +1,12 @@
+create table patientinfo(id int,tittle char(3),fname varchar(10),lname varchar(10),age int(3),gender varchar(5),city varchar(10),phno int(10));
+insert into patientinfo values(1,'Mr','adhithiya','ashok',18,'M','ch',7092917089);
+insert into patientinfo values(2,'Ms','geetha','arjun',18,'F','ch',9092917089);
+insert into patientinfo values(3,'Mr','surya','prakash',19,'M','ch',7892917089);
+insert into patientinfo values(4,'Mr','deepak','kumar',19,'M','ch',9992917089);
+insert into patientinfo values(5,'Ms','bhava','dharani',19,'F','ch',9452917089);
+insert into patientinfo values(6,'Mr','arjunaa','arjun',18,'M','ch',7092457089);
+insert into patientinfo values(7,'Mr','jagadish','raj',19,'M','ch',7092912089);
+insert into patientinfo values(8,'Mr','alwin','mohan',19,'M','ch',7023917089);
+insert into patientinfo values(9,'Mr','kalai','selvi',19,'F','ch',7094417089);
+insert into patientinfo values(10,'Mr','Reshma','aarthy',19,'F','ch',7092917096);
+select * from patientinfo;
