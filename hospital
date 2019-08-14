@@ -10,3 +10,17 @@ insert into patientinfo values(8,'Mr','alwin','mohan',19,'M','ch',7023917089);
 insert into patientinfo values(9,'Mr','kalai','selvi',19,'F','ch',7094417089);
 insert into patientinfo values(10,'Mr','Reshma','aarthy',19,'F','ch',7092917096);
 select * from patientinfo;
+
+create table docinfo(id int,name varchar(10),specialization varchar(10),phno int(10));
+insert into docinfo values(1,'naveen','cardiologist',1234567890);
+insert into docinfo values(2,'poonguzhali','general',1234567890);
+insert into docinfo values(3,'angel','ENT',1234567890);
+insert into docinfo values(4,'evelyn','optometrist',1234567890);
+insert into docinfo values(5,'ayngaran','neurologist',1234567890);
+
+create table consult(pid int,fees int,health varchar(10),consult_date date,constraint DD foreign key(pid) references patientinfo(pid));
+insert into consult values(1,500,'fever',date());
+insert into consult values(1,300,'cold',date());
+insert into consult values(1,200,'cough',date());
+insert into consult values(1,100,'head ache',date());
+insert into consult values(1,250,'stomach ache',date());
