@@ -27,3 +27,7 @@ insert into consult values(1,250,'stomach ache',date());
 
 select name as Name,fname as First_Name,gender as Gender,city as City from patientinfo as p1 join docinfo d1 on p1.id=d1.id
 join consult c1 on c1.pid=p1.id
+
+select fname,gender,city from patientinfo order by id desc;
+
+
